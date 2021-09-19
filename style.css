@@ -1609,11 +1609,11 @@ button.cale-btn:hover{
 /*----------------------------------------*/
 /*  15 . Breadcumbs Area
 /*----------------------------------------*/
-.page-area {
+.page-area , #contact-page-area{
     position: relative;
 }
 .page-area {
-    background: url(img/background/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg);
+    background: url(img/background/adeolu-eletu-unRkg2jH1j0-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2598,6 +2598,12 @@ span.email-notes{
     height: auto;
     width: 100%;
 }
+#contact-page-area{
+    background: url(img/background/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 .contact-content {
     padding: 100px;
     background: #000 none repeat scroll 0 0;
@@ -2660,6 +2666,9 @@ span.email-notes{
     padding: 30px 30px 30px;
     position: relative;
     z-index: 1;
+}
+.contact-images img{
+    height: 420px;
 }
 /*----------------------------------------
  24. Login And Register page
