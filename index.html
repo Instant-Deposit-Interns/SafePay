@@ -7,6 +7,9 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 		<!-- favicon -->		
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
 
@@ -106,14 +109,7 @@
                                                        
                                                     </li>
                                                    
-                                                    <li><a class="pages" href="#">Dashboard</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="a-dashboard.html">Dashboard</a></li>
-                                                         
-                                                            <li><a href="a-transection-log.html">Transaction Log</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    
+                                                   
                                                     <li><a href="contact.html">contacts</a></li>
                                                 </ul>
                                             </div>
@@ -144,13 +140,7 @@
                                             </ul>
                                         </li>
                                        
-                                        <li><a class="pages" href="#">Dashboard</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="a-dashboard.html">Dashboard</a></li>
-                                                
-                                                <li><a href="a-transection-log.html">Transaction Log</a></li>
-                                            </ul>
-                                        </li>
+                                       
                                         <li><a href="contact.html">contacts</a></li>
                                     </ul>
                                 </nav>
@@ -181,17 +171,13 @@
                                     </div>
                                     <!-- End slide content -->
                                 </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                   <!-- Start mony send content -->
-                                   <div class="money-send">
+                                <div id="payment-comp" class="col-md-6 col-sm-12 col-xs-12">
+                                   <!-- <div class="money-send">
                                         <div class="calculator-inner">
                                             <div class="single-cal">
                                                 <div class="inner-form">
                                                     <form action="#">
                                                         <label>Select your payment</label>
-                                                        <!-- <input type="text" class="form-input" placeholder="School fees("> -->
-                                                        <!-- <i class="flaticon-028-money" style="width:300px;"></i> -->
-                                                        <img src="img/about/pay.png" alt="" style="width:70px; height:70px;">
                                                         <select class="form-select" class="form-input" aria-label="Default select example">
                                                             <option selected>School Fees(Private Schools)</option>
                                                             <option value="1">Plateau Health Subscription</option>
@@ -206,19 +192,13 @@
                                                 </div>
                                                 <div class="inner-form">
                                                     <form action="#">
-                                                        <label style="margin-top: 10px;">Enter Registration Number</label>
+                                                        <label style="margin-top: 60px;">Enter Registration Number</label>
                                                         <input style="color: black;" type="number" class="form-input" placeholder="Enter Reg Number">
-                                                        <select>
-                                                            <option value="position">ERN</option>
-
-                                                        </select>
                                                     </form>
                                                 </div>
                                                 <div class="inner-form-text">
-                                                    <!-- <div class="rate-text"> -->
                                                         <span> You are about to pay <strong>N3,500 </strong>for EZICHI OGO being BECE fees Exchange rate</span>
             
-                                                    <!-- </div> -->
                                                 </div>
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" id="dropdownCheck" onclick="myFunction()">
@@ -234,7 +214,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                   </div>
+                                   </div> -->
                                    <!-- End mony send content -->
                                 </div>
                             </div>
@@ -254,7 +234,7 @@
                         <div class="about-image">
                             <img src="img/about/vd.jpg" alt="" class="ab-first-img">
                             <img src="img/about/vd1.jpg" alt="" class="ab-second-img">
-                        </div></br>
+                        </div>
                         <div class="about-image">
                             <img src="img/about/vd2.jpg" alt="" class="ab-first-img">
                             <!-- <img src="img/about/vd.jpg" alt="" class="ab-second-img"> -->
@@ -395,8 +375,8 @@
         </div>
         <!-- End services area -->
 
-        <div class="brand-area area-padding fix" data-stellar-background-ratio="0.6">
-            
+        <!-- <div class="brand-area area-padding fix" data-stellar-background-ratio="0.6">
+             -->
         </div>
 
         <!-- Start overview Area -->
@@ -407,7 +387,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="overview-content">
                             <div class="overview-images">
-                                <img src="img/about/overview.jpg" alt="">
+                                <img src="img/about/ladypay2crop.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -490,12 +470,12 @@
                                 <div class="footer-head">
                                     <h4>Products</h4>
                                     <ul class="footer-list">
-                                        <li><a href="#">Bank Card</a></li>
-                                        <li><a href="#">Deposit Skim</a></li>
-                                        <li><a href="#">Affiliate</a></li>
-                                        <li><a href="#">Software</a></li>
-                                        <li><a href="#">Branding </a></li>
-                                        <li><a href="#">Promotion </a></li>
+                                        <li><a href="#">Cash Deposit</a></li>
+                                        <li><a href="#">Bill Payments</a></li>
+                                        <li><a href="#">Cash to Phone</a></li>
+                                        <li><a href="#">Withdraw Cash</a></li>
+                                        <li><a href="#">Isusu Contributions </a></li>
+                                        <li><a href="#">Urgent 2k </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -507,12 +487,12 @@
                                 <div class="footer-head">
                                     <h4>Payments</h4>
                                     <ul class="footer-list">
-                                        <li><a href="#">Send Mony</a></li>
-                                        <li><a href="#">Receive Money </a></li>
-                                        <li><a href="#">Shopping</a></li>
-                                        <li><a href="#">Online payment</a></li>
-                                        <li><a href="#">pay a Friend </a></li>
-                                        <li><a href="#">pay a bill </a></li>
+                                        <li><a href="#">Pay School Fees</a></li>
+                                        <li><a href="#">Pay Health Insurance </a></li>
+                                        <li><a href="#">Pay any Invoice</a></li>
+                                        <li><a href="#">Pay for a Friend</a></li>
+                                        <li><a href="#">Pay local taxes </a></li>
+                                        <li><a href="#">Pay any bill </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -524,11 +504,11 @@
                                 <div class="footer-head">
                                     <h4>Company</h4>
                                     <ul class="footer-list">
-                                        <li><a href="#">About us</a></li>
-                                        <li><a href="#">Services </a></li>
-                                        <li><a href="#">Events</a></li>
-                                        <li><a href="#">Promotion</a></li>
-                                        <li><a href="#">Transition</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Products </a></li>
+                                        <li><a href="#">Payments</a></li>
+                                        <li><a href="#">Subscriptions</a></li>
+                                        <li><a href="#">Our Vision</a></li>
                                         <li><a href="#">Social Media</a></li>
                                     </ul>
                                 </div>
@@ -571,13 +551,13 @@
                 </div>
             </div>
             <!-- End footer bottom area -->
+            <div id="payment-comp"></div>
         </footer>
    
         
-		
 
 		<!-- all js here -->
-
+        
 		<!-- jquery latest version -->
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- bootstrap js -->
@@ -601,6 +581,8 @@
 		<!-- main js -->
 		<script src="js/main.js"></script>
         <script src="js/md.js"></script>
+        
+        <script type="text/babel" src="./jsx/PaymentComp.js"></script>
 		
 	</body>
 </html>
